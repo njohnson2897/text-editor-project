@@ -54,7 +54,23 @@ module.exports = () => {
 
     module: {
       rules: [
-        
+        {
+          // allows us to bundle CSS files along with JS
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          // Transpiles ES6 and ES7 into ES5 for total browser accessibility
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+            },
+          },
+        },
       ],
     },
   };
