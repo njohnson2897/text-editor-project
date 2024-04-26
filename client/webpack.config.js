@@ -12,7 +12,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      // do I want to have one of these for each JS file?
     },
     output: {
       filename: '[name].bundle.js',
@@ -28,7 +27,7 @@ module.exports = () => {
       // Allows us to inject a service worker that we've written
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
 
       // Creates our manifest to make the app installable
