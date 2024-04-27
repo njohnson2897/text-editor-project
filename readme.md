@@ -23,5 +23,5 @@ N/A
 N/A
 
 ## Credits
-This application draws heavily from the Module 19 mini project, particularly for the syntax of the api routes.  Additionally, I received a lot of help from a bootcamp tutor,  Chris Baird, specifically on debugging the indexedDB storage functionality as well as properly registering my service worker for the application.
+This application draws heavily from the Module 19 mini project, particularly for the syntax of the indexedDB methods and the creation of the service worker.  Additionally, I received a lot of help from a bootcamp tutor,  Chris Baird, specifically on debugging the indexedDB storage functionality as well as properly registering my service worker for the application.
 
